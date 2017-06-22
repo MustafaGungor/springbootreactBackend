@@ -5,7 +5,11 @@ import com.javamg.entity.BaseEntity;
 import java.util.List;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 public interface BaseDao<T extends BaseEntity> {
     T getId(int id);

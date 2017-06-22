@@ -3,6 +3,14 @@ package com.javamg.entity;
 import javax.persistence.*;
 import java.sql.Date;
 
+/**
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
+ */
+
 @MappedSuperclass
 public abstract class BaseEntity {
 

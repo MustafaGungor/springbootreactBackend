@@ -8,20 +8,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 @RestController
 @RequestMapping("department")
+@CrossOrigin(origins = "http://localhost:3000")
 public class DepartmentController {
 
     @Autowired
     private DepartmentService departmentService;
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @RequestMapping(value = "read", method = RequestMethod.GET)
     public List<Department> getAllDepartment() {
         return departmentService.getAllDepartment();
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @RequestMapping(value = "post", method = RequestMethod.POST)
     public void createDepartment(Department department) {
         departmentService.createDepartment(department);

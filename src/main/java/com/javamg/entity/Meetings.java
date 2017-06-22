@@ -2,7 +2,13 @@ package com.javamg.entity;
 
 import javax.persistence.*;
 import java.util.List;
-
+/**
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
+ */
 @Entity
 @Table(name="meetings")
 public class Meetings extends BaseEntity{

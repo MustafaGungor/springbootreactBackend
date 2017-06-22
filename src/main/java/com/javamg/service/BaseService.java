@@ -1,7 +1,11 @@
 package com.javamg.service;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 public interface BaseService {
 }

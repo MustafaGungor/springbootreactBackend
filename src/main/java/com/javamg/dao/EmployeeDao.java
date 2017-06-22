@@ -9,7 +9,11 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 @Transactional
 @Repository

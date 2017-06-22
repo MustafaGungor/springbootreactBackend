@@ -8,20 +8,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 @RestController
 @RequestMapping("employee")
+@CrossOrigin(origins = "http://localhost:3000")
 public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @RequestMapping(value = "read", method = RequestMethod.GET)
     public List<Employee> getAllEmployee() {
         return employeeService.getAllEmployee();
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @RequestMapping(value = "create", method = RequestMethod.POST)
     public void createEmployee(@RequestBody Employee employee) {
         employeeService.createEmployee(employee);

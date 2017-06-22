@@ -8,15 +8,19 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by ucakyunus on 10.06.2017.
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
  */
 @RestController
 @RequestMapping("meetings")
+@CrossOrigin(origins = "http://localhost:3000")
 public class MeetingsController {
 
     @Autowired
     private MeetingsService meetingsService;
-    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "read", method = RequestMethod.GET)
     public List<Meetings> getAllMeetings() {
         return meetingsService.getAllMeeting();

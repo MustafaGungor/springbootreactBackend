@@ -2,7 +2,13 @@ package com.javamg.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-
+/**
+ *
+ * @author MustafaGungor
+ * @since 10.06.2017
+ * @version 1.0.0
+ *
+ */
 @Entity
 @Table(name = "employee")
 public class Employee extends BaseEntity{
